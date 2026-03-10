@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+qrcode[pil]
+transformers
+pypdf
+pytesseract
+Pillow
+torch
+python-multipart
