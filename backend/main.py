@@ -4,10 +4,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from database import Base, engine
-from routes.patients import router as patients_router
-from routes.reports import router as reports_router
-
+from backend.database import Base, engine
+from backend.routes.patients import router as patients_router
+from backend.routes.reports import router as reports_router
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
