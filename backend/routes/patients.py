@@ -4,10 +4,10 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session, selectinload 
 
-from database import get_db
-from models import Patient
-from schemas import PatientCreate, PatientDetail, PatientOut, RegisterPatientResponse
-from services.qr_service import generate_patient_qr
+from backend.database import get_db
+from backend.models import Patient
+from backend.schemas import PatientCreate, PatientDetail, PatientOut, RegisterPatientResponse
+from backend.services.qr_service import generate_patient_qr
 
 router = APIRouter(tags=["patients"])
 
