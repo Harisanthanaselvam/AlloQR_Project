@@ -4,6 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session, selectinload
 
+
 from database import get_db
 from models import Patient
 from schemas import PatientCreate, PatientDetail, PatientOut, RegisterPatientResponse
